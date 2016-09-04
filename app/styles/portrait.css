@@ -1,0 +1,354 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/**********
+Baseline
+**********/
+body {
+	background-color: #8b8b8b;
+	margin: 0;
+}
+#pageflip {
+	float:left;
+	width:768px; /* determines width of total pages of slides*/
+	height:100%;
+	overflow:hidden;
+}
+.scrollerwrapper {
+	position:relative;
+	z-index:2;
+	display:block;
+	float:left;
+	width:768px;
+	height:100%;
+	font-size:2em;
+	overflow:hidden;
+}
+#pagewrapper {
+	height:1024px;		/* Of course you need to specify the object height */
+	overflow:hidden;
+	position:relative;	/* On older OS versions "position" and "z-index" must be defined, */
+	z-index:1;			/* it seems that recent webkit is less picky and works anyway. */
+	margin-left: auto;
+	margin-right:auto;
+	width:768px;
+	background:#e5e5e5;/*	background:#aaa url(wrapper-bg.png);*/
+
+}
+.scroller {
+	padding:0;
+	position:relative;
+	overflow:hidden;
+}
+.scroller ul {
+	list-style:none;
+	display:block;
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	text-align:left;
+}
+.scroller li {
+	display:block;
+	vertical-align:middle;
+	padding:0px;
+	width: 768px;
+	height: 1024px;
+	list-style-type: none;
+	font-size:14px;
+
+}
+.scroller ul li h3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 15pt;
+	color: #505050;
+	-webkit-transform: translate(70px, -108px);
+}
+
+h5{
+font-family: Trebuchet MS;
+color: #aaa;
+position: absolute;
+top: 875px;
+left:80px;
+font-weight: normal;
+font-size: .9em;
+letter-spacing: 0.5px;
+line-height: 10px;
+text-align: left;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+ul li p {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #505050;
+	width: 384px;
+	-webkit-transform: translate(70px, -108px);
+}
+ul li img {
+	text-align: center;
+	margin:auto;
+	border-style: none;
+	-webkit-transform: scale(0.8);
+
+}
+
+ul li img.full {
+-webkit-transform: scale(1);
+}
+
+li h2 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFF;
+	background-color: #d73b31;
+	float: right;
+	padding: 15px 13px 15px 13px;
+	margin: 0px;
+	line-height: 0px;
+	-webkit-transform: translate(-67px, -108px);
+}
+ul li ul {
+	background-image:url(images/arrow.png);
+	background-repeat:no-repeat;
+	background-position:bottom right;
+	background-color:#FFC;
+}
+
+ul li img.logo {
+	width:auto;
+	-webkit-transform: scale(1);
+}
+
+
+/**********
+iPad Pro 1024 X 1366 (@1x), 2048 x 2732 (@2x)
+**********/
+@media screen and (min-width: 901px) {
+	#pagewrapper {
+	    height: 1366px;
+	    width: 1024px;
+	}
+
+
+h5{
+		top: 1200px;
+}
+.scrollerwrapper {
+    width: 1024px;
+    height: 100%;
+}
+
+.scroller li:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 93%;
+}
+
+	.scroller li {
+			text-align: center;
+	    width: 1024px;
+	    height: 1366px;
+	}
+
+	ul li img {
+		vertical-align: middle;
+		    display: inline-block;
+    margin: auto;
+		-webkit-transform: scale(1.2);
+}
+
+ul li img.full {
+-webkit-transform: scale(1.2);
+}
+
+}
+
+
+/**********
+Pixel C 900 X 1280 (@1x), 1800 x 2560 (@2x)
+**********/
+@media screen and (min-width: 851px) and (max-width: 900px) {
+	#pagewrapper {
+			height: 1280px;
+			width: 900px;
+	}
+
+
+	h5{
+			top: 1100px;
+	}
+
+	.scrollerwrapper {
+			width: 900px;
+			height: 100%;
+	}
+
+	.scroller li:before {
+			content: ' ';
+			display: inline-block;
+			vertical-align: middle;
+			height: 93%;
+	}
+
+		.scroller li {
+				text-align: center;
+				padding: 0px;
+				width: 900px;
+				height: 1280px;
+		}
+
+		ul li img {
+			vertical-align: middle;
+					display: inline-block;
+			margin: auto;
+			-webkit-transform: scale(1);
+	}
+
+	ul li img.full {
+	-webkit-transform: scale(1.1);
+	}
+}
+
+/**********
+Nexus 10 2560 x 1600 pixel  1280 x 800
+**********/
+@media screen and (min-width: 769px) and (max-width: 850px) {
+		#pagewrapper {
+			height: 1280px;
+			width: 800px;
+	}
+
+
+	h5{
+			top: 1100px;
+	}
+
+	.scrollerwrapper {
+			width: 800px;
+			height: 100%;
+	}
+
+	.scroller li:before {
+			content: ' ';
+			display: inline-block;
+			vertical-align: middle;
+			height: 93%;
+	}
+
+		.scroller li {
+				text-align: center;
+				width: 800px;
+				height: 1280px;
+		}
+
+		ul li img {
+			vertical-align: middle;
+					display: inline-block;
+			margin: auto;
+			-webkit-transform: scale(1);
+	}
+
+	ul li img.full {
+	-webkit-transform: scale(1);
+	}
+}
+
+
+/**********
+iPad / Nexus 9 1024 X 768 (@1x), 2048 x 1536 (@2x)
+**********/
+@media screen and (min-width: 602px) and (max-width: 768px) {
+	#pagewrapper {
+	    height: 1024px;
+	    width: 768px;
+	}
+
+h5{
+		top: 840px;
+}
+.scrollerwrapper {
+    width: 768px;
+    height: 100%;
+}
+
+.scroller li:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 93%;
+}
+
+	.scroller li {
+			text-align: center;
+	    width: 768px;
+	    height: 1024px;
+	}
+
+	ul li img {
+		vertical-align: middle;
+		    display: inline-block;
+    margin: auto;
+		-webkit-transform: scale(.8);
+}
+ul li img.logo {
+	width:auto;
+	-webkit-transform: scale(1);
+}
+
+ul li img.full {
+-webkit-transform: scale(1);
+}
+
+}
+
+
+/*Nexus 7  601 x 906 | 1280 x 800, 216ppi */
+@media screen and (max-width: 601px) {
+
+	#pagewrapper {
+	    height: 906px;
+	    width: 601px;
+	}
+
+
+h5{
+		top: 750px;
+}
+.scrollerwrapper {
+    width: 601px;
+
+}
+
+	.scroller li {
+			text-align: center;
+	    width: 601px;
+	    height: 906px;
+
+	}
+
+	ul li img {
+		vertical-align: middle;
+		    display: inline-block;
+    margin: auto;
+		-webkit-transform: scale(1);
+		width: 100%;
+}
+ul li img.logo {
+	width:auto;
+}
+
+ul li img.full {
+-webkit-transform: scale(1);
+}
+
+}

@@ -1,6 +1,5 @@
-active
-archive-2011
-demo
-stage
-robots.txt
-humans.txt
+node_modules
+dist/
+docs/
+.tmp
+app.yaml
