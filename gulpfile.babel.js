@@ -39,33 +39,24 @@ import pkg from './package.json';
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
-
-// // Optimize images
-// gulp.task('images', () =>
-//   gulp.src('app/images/**/*')
-//     .pipe($.cache($.imagemin({
-//       progressive: true,
-//       interlaced: true
-//     })))
-//     .pipe(gulp.dest('dist/images'))
-//     .pipe($.size({title: 'images'}))
-// );
-
-// Optimize Images
-gulp.task('images', function () {
-  return gulp.src('app/images/**/*.{gif,jpg,png,svg}')
-    .pipe($.cache($.imagemin({
-      progressive: true,
-      interlaced: true,
-      pngquant: true
-    })))
-    .pipe(gulp.dest('dist/images'))
-    .pipe($.size({title: 'images'}));
-});
-
+//Clear gulp cache
 gulp.task('clear', function (done) {
   return cache.clearAll(done);
 });
+
+
+
+// Optimize images
+gulp.task('images', () =>
+  gulp.src('app/images/**/*')
+    .pipe($.cache($.imagemin({
+      progressive: true,
+      interlaced: true
+    })))
+    .pipe(gulp.dest('dist/images'))
+    .pipe($.size({title: 'images'}))
+);
+
 
 // Copy all files at the root level (app)
 gulp.task('copy', () =>
