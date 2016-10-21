@@ -10,7 +10,7 @@ Viewport was made with the following tablets in mind with portrait orientation.
 ## Setting your tablet size
 
 #### app/index.html
-Alter
+Alter  
     #pageflip { width:2304px; /* determines the width of the horizontal container ( Number of sides * screen width)*/ }
     .scroller {	height:2048px; /* determines the height of the vertical container ( Number of sides * screen height)*/ }
 
