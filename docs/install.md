@@ -3,7 +3,7 @@
 **tl;dr**: [Download Viewport](https://github.com/gruntmonkeyLLC/viewport/archive/master.zip) and run `$ npm install --global gulp && npm install` in that directory to get started.
 
 
-**Demo**
+**Demo**  
 Run
 ```sh
 $ gulp serve
