@@ -1,5 +1,6 @@
 node_modules
 dist/
-docs/
+docs/mdl-sass.md
 .tmp
 app.yaml
+README-WSK.md
