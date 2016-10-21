@@ -19,7 +19,7 @@ Alter
 
 #### app/images/{your img directory}
 
-## Progressive Web App or AppManifest
+## Progressive Web App or AppCache
 
 #### app/index.html
 By default Viewport supports progressive web apps offline functionality through service workers and manifests.
