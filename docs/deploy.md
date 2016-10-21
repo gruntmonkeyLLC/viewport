@@ -2,6 +2,11 @@
 
 ##Build
 ```sh
+$ gulp
+```
+
+##Serve
+```sh
 $ gulp serve:dist
 ```
 
