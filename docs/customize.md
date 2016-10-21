@@ -25,10 +25,8 @@ Alter
 By default Viewport supports progressive web apps offline functionality through service workers and manifests.
 If you have an iPad and want the same offline functionality uncomment the <!-- manifest="viewport.manifest" --> located in app/index.html and add it to the html tag.
 
-viewport.manifest will be produced on build when
+viewport.manifest will be produced on build when you run
 
 ```sh
 $ gulp
 ```
-
-is run.
