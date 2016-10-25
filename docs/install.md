@@ -1,19 +1,14 @@
 # Install
 
-**tl;dr**: [Download Viewport](https://github.com/gruntmonkeyLLC/viewport/archive/master.zip) and run `$ npm install --global gulp && npm install` in that directory to get started.
+# Quickstart (for those with knowledge of Node)
+**tl;dr**: [Download Viewport](https://github.com/gruntmonkeyLLC/viewport/archive/master.zip) and run `$ npm install --global gulp && npm install && npm start` in that directory to get started.
 
-
-**Demo**  
-Run
-```sh
-$ gulp serve
-```
 Open Chrome Device Toolbar and select iPad.
 Command+Shift+M (Mac) or Ctrl+Shift+M (Windows, Linux)
 
 
 -
-
+## Installation
 To take advantage of Viewport you need to:
 
 1. Get a copy of the code.
